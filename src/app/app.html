@@ -1,8 +1,28 @@
 <ion-menu [content]="content">
   <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
+    <ion-toolbar no-border-top color="frenzy">
+      <ion-buttons start>
+        <button ion-button icon-only>
+          <ion-icon name="content"></ion-icon>
+        </button>
+      </ion-buttons>
+
+      <!-- Header  Titulo-->
+      <ion-title class="favHTitle">
+        <ion-title>SonriApp</ion-title>
+        <!-- <img src="../../assets/frenzy-icons/icn-35.png"> -->
+      </ion-title>
+
+      <ion-buttons end>
+        <button ion-button icon-only menuClose>
+          <ion-icon class="favHIcon" ios="ios-close-circle" md="md-close-circle"></ion-icon>
+        </button>
+      </ion-buttons>
     </ion-toolbar>
+
+    <!-- <ion-toolbar>
+      <ion-title>SonriApp</ion-title><ion-icon ios="ios-close-circle" md="md-close-circle" item-right menuClose></ion-icon>
+    </ion-toolbar> -->
   </ion-header>
 
   <ion-content>
