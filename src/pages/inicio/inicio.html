@@ -16,32 +16,38 @@
 
   <button ion-button secondary menuToggle>Toggle Menu</button> -->
 
-  <ion-card>
+  <ion-card (click)="openQS()">
     <img src="../../assets/img/card-saopaolo.png"/>
-    <div class="card-title">¿Quienes</div>
+    <div class="card-title">¿Quiénes</div>
     <!-- <div class="card-title">Somos?</div> -->
     <div class="card-subtitle">Somos?</div>
   </ion-card>
 
-  <ion-card>
+  <ion-card (click)="openNS()">
     <img src="../../assets/img/card-amsterdam.png"/>
     <div class="card-title">Nuestra</div>
     <div class="card-subtitle">Misión</div>
   </ion-card>
 
-  <ion-card>
+  <ion-card (click)="openNH()">
     <img src="../../assets/img/card-sf.png"/>
     <div class="card-title">Nuestra</div>
     <div class="card-subtitle">Historia</div>
   </ion-card>
 
-  <ion-card>
+  <ion-card (click)="openV()">
+    <img src="../../assets/img/card-amsterdam.png"/>
+    <div class="card-title">Se Un</div>
+    <div class="card-subtitle">Voluntario</div>
+  </ion-card>
+
+  <ion-card (click)="openSV()">
     <img src="../../assets/img/card-madison.png"/>
     <div class="card-title">Solicitanos</div>
     <div class="card-subtitle">Una Visita</div>
   </ion-card>
 
-  <ion-card>
+  <ion-card (click)="openD()">
     <img src="../../assets/img/card-sf.png"/>
     <div class="card-title">Has</div>
     <div class="card-subtitle">Un Donativo</div>

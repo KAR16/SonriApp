@@ -2,10 +2,13 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
-import { Page1 } from '../pages/page1/page1';
+import { InicioPage } from '../pages/inicio/inicio';
 import { Page2 } from '../pages/page2/page2';
 import { PayaescuelaPage } from '../pages/payaescuela/payaescuela';
-
+import { QuienesSomosPage } from '../pages/quienes-somos/quienes-somos';
+import { NuestraMisionPage } from '../pages/nuestra-mision/nuestra-mision';
+import { NuestraHistoriaPage } from '../pages/nuestra-historia/nuestra-historia';
+import { SolicitaVisitaPage }  from '../pages/solicita-visita/solicita-visita';
 
 @Component({
   templateUrl: 'app.html'
@@ -13,7 +16,7 @@ import { PayaescuelaPage } from '../pages/payaescuela/payaescuela';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Page1;
+  rootPage: any = InicioPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -22,14 +25,15 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Inicio', component: Page1 },
+      { title: 'Inicio', component: InicioPage },
       { title: 'Payaescuela', component: PayaescuelaPage },
       { title: 'Tutoriales', component: Page2 },
       { title: 'Constelaciones', component: Page2 },
       { title: 'Sedes', component: Page2 },
       { title: 'Eventos', component: Page2 },
       { title: 'Sonrisauros', component: Page2 },
-      { title: 'Contactanos', component: Page2 }
+      { title: 'Contactanos', component: Page2 },
+      { title: 'Créditos', component: Page2 }
     ];
 
   }
