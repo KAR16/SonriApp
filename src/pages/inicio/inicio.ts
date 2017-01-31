@@ -21,59 +21,58 @@ export class InicioPage {
       'title': '¿Quiénes',
       'subtitle': 'Somos?',
       'image': 'assets/img/card-saopaolo.png',
-      'view': 'openQS()'
+      'view': 'open(QS)'
     },
     {
       'title': 'Nuestra',
       'subtitle': 'Misión',
       'image': 'assets/img/card-amsterdam.png',
-      'view': 'openNS()'
+      'view': 'NM'
     },
     {
       'title': 'Nuestra',
       'subtitle': 'Historia',
       'image': 'assets/img/card-sf.png',
-      'view': 'openNH()'
+      'view': 'NH'
     },
     {
       'title': 'Se Un',
       'subtitle': 'Voluntario',
       'image': 'assets/img/card-amsterdam.png',
-      'view': 'openV()'
+      'view': 'V'
     },
     {
       'title': 'Solicitanos',
       'subtitle': 'Una Visita',
       'image': 'assets/img/card-madison.png',
-      'view': 'openSV()'
+      'view': 'SV'
     },
     {
       'title': 'Has',
       'subtitle': 'Un Donativo',
       'image': 'assets/img/card-sf.png',
-      'view': 'openD()'
+      'view': 'D'
     },
   ]
 }
 
-  openQS(){
+open(param){
+  if (param == 'QS' ){
     this.navCtrl.push(QuienesSomosPage);
   }
-
-  openNS(){
+  else if(param == 'NM' ){
     this.navCtrl.push(NuestraMisionPage);
   }
-
-  openNH(){
+  else if(param == 'NH' ){
     this.navCtrl.push(NuestraHistoriaPage);
   }
-
-  openSV(){
+  else if(param == 'SV' ){
     this.navCtrl.push(SolicitaVisitaPage);
   }
-
-  openD(){
+  else if(param == 'D' ){
     this.navCtrl.push(DonativoPage);
   }
+}
+
 
 }
