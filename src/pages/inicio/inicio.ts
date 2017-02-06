@@ -18,61 +18,61 @@ export class InicioPage {
   constructor(public navCtrl: NavController) {
   this.items = [
     {
-      'title': '¿Quiénes',
-      'subtitle': 'Somos?',
-      'image': 'assets/img/card-saopaolo.png',
-      'view': 'open(QS)'
+      'titulo': '¿Quiénes',
+      'subtitulo': 'Somos?',
+      'imagen': 'assets/img/card-saopaolo.png',
+      'vista': 'QuienesSomosPage'
     },
     {
-      'title': 'Nuestra',
-      'subtitle': 'Misión',
-      'image': 'assets/img/card-amsterdam.png',
-      'view': 'NM'
+      'titulo': 'Nuestra',
+      'subtitulo': 'Misión',
+      'imagen': 'assets/img/card-amsterdam.png',
+      'vista': 'NuestraMisionPage'
     },
     {
-      'title': 'Nuestra',
-      'subtitle': 'Historia',
-      'image': 'assets/img/card-sf.png',
-      'view': 'NH'
+      'titulo': 'Nuestra',
+      'subtitulo': 'Historia',
+      'imagen': 'assets/img/card-sf.png',
+      'vista': 'NuestraHistoriaPage'
     },
     {
-      'title': 'Se Un',
-      'subtitle': 'Voluntario',
-      'image': 'assets/img/card-amsterdam.png',
-      'view': 'V'
+      'titulo': 'Se Un',
+      'subtitulo': 'Voluntario',
+      'imagen': 'assets/img/card-amsterdam.png',
+      'vista': 'V'
     },
     {
-      'title': 'Solicitanos',
-      'subtitle': 'Una Visita',
-      'image': 'assets/img/card-madison.png',
-      'view': 'SV'
+      'titulo': 'Solicitanos',
+      'subtitulo': 'Una Visita',
+      'imagen': 'assets/img/card-madison.png',
+      'vista': 'SolicitaVisitaPage'
     },
     {
-      'title': 'Has',
-      'subtitle': 'Un Donativo',
-      'image': 'assets/img/card-sf.png',
-      'view': 'D'
+      'titulo': 'Has',
+      'subtitulo': 'Un Donativo',
+      'imagen': 'assets/img/card-sf.png',
+      'vista': 'DonativoPage'
     },
-  ]
+  ];
 }
 
-open(param){
-  if (param == 'QS' ){
+open(item){
+  console.log("Hola " + item.vista);
+  if (item.vista == 'QuienesSomosPage' ){
     this.navCtrl.push(QuienesSomosPage);
   }
-  else if(param == 'NM' ){
+  else if(item.vista == 'NuestraMisionPage' ){
     this.navCtrl.push(NuestraMisionPage);
   }
-  else if(param == 'NH' ){
+  else if(item.vista == 'NuestraHistoriaPage' ){
     this.navCtrl.push(NuestraHistoriaPage);
   }
-  else if(param == 'SV' ){
+  else if(item.vista == 'SolicitaVisitaPage' ){
     this.navCtrl.push(SolicitaVisitaPage);
   }
-  else if(param == 'D' ){
+  else if(item.vista == 'DonativoPage' ){
     this.navCtrl.push(DonativoPage);
   }
 }
-
 
 }

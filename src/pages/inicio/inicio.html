@@ -14,13 +14,13 @@
   </p>
   <button ion-button secondary menuToggle>Toggle Menu</button> -->
 
-  <!-- <ion-card *ngFor="let item of items" click="open("+ {{item}} +")">
-    <img src="{{item.image}}"/>
-    <div class="card-title">{{item.title}}</div>
-    <div class="card-subtitle">{{item.subtitle}}</div>
-  </ion-card> -->
+  <ion-card *ngFor="let item of items" (click)="open(item)">
+    <img src="{{item.imagen}}"/>
+    <div class="card-title">{{item.titulo}}</div>
+    <div class="card-subtitle">{{item.subtitulo}}</div>
+  </ion-card>
 
-  <ion-card (click)="open('QS')">
+  <!-- <ion-card (click)="open('QS')">
     <img src="assets/img/card-saopaolo.png"/>
     <div class="card-title">¿Quiénes</div>
     <div class="card-subtitle">Somos?</div>
@@ -54,5 +54,5 @@
     <img src="assets/img/card-sf.png"/>
     <div class="card-title">Has</div>
     <div class="card-subtitle">Un Donativo</div>
-  </ion-card>
+  </ion-card> -->
 </ion-content>

@@ -9,6 +9,7 @@ import { QuienesSomosPage } from '../pages/quienes-somos/quienes-somos';
 import { NuestraMisionPage } from '../pages/nuestra-mision/nuestra-mision';
 import { NuestraHistoriaPage } from '../pages/nuestra-historia/nuestra-historia';
 import { SolicitaVisitaPage }  from '../pages/solicita-visita/solicita-visita';
+import { TutorialesPage } from '../pages/tutoriales/tutoriales';
 
 @Component({
   templateUrl: 'app.html'
@@ -27,7 +28,7 @@ export class MyApp {
     this.pages = [
       { title: 'Inicio', component: InicioPage },
       { title: 'Payaescuela', component: PayaescuelaPage },
-      { title: 'Tutoriales', component: Page2 },
+      { title: 'Tutoriales', component: TutorialesPage },
       { title: 'Constelaciones', component: Page2 },
       { title: 'Sedes', component: Page2 },
       { title: 'Eventos', component: Page2 },

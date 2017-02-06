@@ -9,6 +9,7 @@ import { NuestraMisionPage } from '../pages/nuestra-mision/nuestra-mision';
 import { NuestraHistoriaPage } from '../pages/nuestra-historia/nuestra-historia';
 import { SolicitaVisitaPage } from '../pages/solicita-visita/solicita-visita';
 import { DonativoPage } from '../pages/donativo/donativo';
+import { TutorialesPage } from '../pages/tutoriales/tutoriales';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DonativoPage } from '../pages/donativo/donativo';
     NuestraMisionPage,
     NuestraHistoriaPage,
     SolicitaVisitaPage,
-    DonativoPage
+    DonativoPage,
+    TutorialesPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -35,7 +37,8 @@ import { DonativoPage } from '../pages/donativo/donativo';
     NuestraMisionPage,
     NuestraHistoriaPage,
     SolicitaVisitaPage,
-    DonativoPage
+    DonativoPage,
+    TutorialesPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
