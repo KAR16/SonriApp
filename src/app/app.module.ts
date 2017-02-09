@@ -1,6 +1,7 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+
 import { InicioPage } from '../pages/inicio/inicio';
 import { Page2 } from '../pages/page2/page2';
 import { PayaescuelaPage } from '../pages/payaescuela/payaescuela';
